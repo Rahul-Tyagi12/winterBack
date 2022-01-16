@@ -47,7 +47,7 @@ subprocess.run([f"git init -q \
                   && git config --global user.name Rahul-Tyagi12 \
                   && git add . \
                   && git commit -sm update -q \
-                  && git remote add origin https://github.com/{USER_NAME}/{UPSTREAM_REPO}.git \
+                  && git remote add origin {UPSTREAM_REPO} \
                   && git fetch origin -q \
                   && git reset --hard origin/master -q"], shell=True)
 
